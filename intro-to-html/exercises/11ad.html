@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 11</title>
+    <style>
+      .grid-layout-a {
+        display: grid;
+        grid-template-columns: 200px 75px;
+      }
+
+      .grid-layout-b {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+
+      .grid-layout-c {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+
+      .grid-layout-d {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .display-profile {
+        height: 250px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .profile-picture-section {
+        height: 150px;
+      }
+
+      .profile-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile-info-section {
+        height: 100px;
+      }
+
+      .profile-name,
+      .profile-mutual-friend-section,
+      .profile-add-friend-section {
+        margin-left: 6px;
+        margin-top: 6px;
+      }
+
+      .name {
+        font-weight: bold;
+      }
+
+      .mutual-friend {
+        margin-left: 6px;
+        font-size: 12px;
+        color: grey;
+      }
+
+      .profile-mutual-friend-section {
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        align-items: center;
+      }
+
+      .mutual-friend-img {
+        width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+      }
+
+      .add-friend-button {
+        background-color: cadetblue;
+        color: white;
+        padding: 6px 14px 6px 14px;
+        border: none;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-layout-a">
+      <div style="background-color: cadetblue">200px</div>
+      <div style="background-color: pink">75px</div>
+    </div>
+    <div class="grid-layout-b">
+      <div style="background-color: cadetblue">col1</div>
+      <div style="background-color: pink">col2</div>
+      <div style="background-color: cadetblue">col3</div>
+    </div>
+    <div class="grid-layout-c">
+      <div style="background-color: pink">col1</div>
+      <div style="background-color: pink">col2</div>
+      <div style="background-color: pink">col3</div>
+      <div style="background-color: pink">col4</div>
+      <div style="background-color: pink">col1</div>
+      <div style="background-color: pink">col2</div>
+      <div style="background-color: pink">col3</div>
+      <div style="background-color: pink">col4</div>
+    </div>
+    <div class="grid-layout-d">
+      <div class="display-profile">
+        <div class="profile-picture-section">
+          <img class="profile-picture" src="../pictures/powder1.png" />
+        </div>
+        <div class="profile-info-section">
+          <div class="profile-name"><p class="name">Powder</p></div>
+          <div class="profile-mutual-friend-section">
+            <div class="profile-mutual-friend-img">
+              <img
+                class="mutual-friend-img"
+                src="/channel-profiles/channel-3.jpeg"
+              />
+            </div>
+            <div class="profile-mutual-friend-amt">
+              <p class="mutual-friend">2 Mutual Friends</p>
+            </div>
+          </div>
+          <div class="profile-add-friend-section">
+            <button class="add-friend-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+      <div class="display-profile">
+        <div class="profile-picture-section">
+          <img class="profile-picture" src="../pictures/powder1.png" />
+        </div>
+        <div class="profile-info-section">
+          <div class="profile-name"><p class="name">Powder</p></div>
+          <div class="profile-mutual-friend-section">
+            <div class="profile-mutual-friend-img">
+              <img
+                class="mutual-friend-img"
+                src="/channel-profiles/channel-3.jpeg"
+              />
+            </div>
+            <div class="profile-mutual-friend-amt">
+              <p class="mutual-friend">2 Mutual Friends</p>
+            </div>
+          </div>
+          <div class="profile-add-friend-section">
+            <button class="add-friend-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+      <div class="display-profile">
+        <div class="profile-picture-section">
+          <img class="profile-picture" src="../pictures/powder1.png" />
+        </div>
+        <div class="profile-info-section">
+          <div class="profile-name"><p class="name">Powder</p></div>
+          <div class="profile-mutual-friend-section">
+            <div class="profile-mutual-friend-img">
+              <img
+                class="mutual-friend-img"
+                src="/channel-profiles/channel-3.jpeg"
+              />
+            </div>
+            <div class="profile-mutual-friend-amt">
+              <p class="mutual-friend">2 Mutual Friends</p>
+            </div>
+          </div>
+          <div class="profile-add-friend-section">
+            <button class="add-friend-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

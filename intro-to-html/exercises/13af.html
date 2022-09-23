@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercises 13a-f</title>
+    <style>
+      .d-container {
+        margin-top: 50px;
+        width: 300px;
+        height: 110px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .e-container {
+        margin-top: 50px;
+        width: 300px;
+        height: 210px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .f-container {
+        margin-top: 50px;
+        height: 200px;
+        width: 400px;
+        border-style: solid;
+        border-width: 1px;
+      }
+
+      .f-tweet {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex">
+      <div
+        style="
+          background-color: pink;
+          width: 100px;
+          display: flex;
+          justify-content: center;
+        "
+      >
+        <p style="color: white; background-color: black">item1</p>
+      </div>
+      <div style="background-color: lightblue; width: 200px"></div>
+    </div>
+    <div style="display: flex; margin-top: 100px; height: 100px">
+      <div style="width: 100px; background-color: pink"></div>
+      <div style="width: 200px; background-color: lightblue">
+        <div>row1</div>
+        <div style="display: flex; justify-content: space-between">
+          <p style="color: white; background-color: black">row2</p>
+          <p style="color: white; background-color: black">row2</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-container">
+      <div style="display: inline-block; width: 300px">
+        <p
+          style="
+            margin-left: 8px;
+            color: grey;
+            font-size: 11px;
+            font-family: Arial;
+          "
+        >
+          ALL INBOXES
+        </p>
+      </div>
+      <div style="display: flex; align-items: center">
+        <div>
+          <img
+            style="
+              border-radius: 20px;
+              margin-left: 8px;
+              width: 40px;
+              height: 40px;
+              object-fit: cover;
+            "
+            src="/channel-profiles/channel-1.jpeg"
+          />
+        </div>
+        <div style="flex: 1; margin-left: 8px">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div style="font-weight: bold">Chewy Promotions</div>
+            <div
+              style="
+                margin-right: 8px;
+                color: grey;
+                font-size: 11px;
+                font-family: arial;
+              "
+            >
+              4:58PM
+            </div>
+          </div>
+          <div style="font-weight: bold">Biggest sales of the year!</div>
+          <div style="font-size: 11px; color: grey; margin-top: 3px">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="e-container">
+      <div>
+        <div style="display: inline-block; width: 300px">
+          <p
+            style="
+              margin-left: 8px;
+              color: grey;
+              font-size: 11px;
+              font-family: Arial;
+            "
+          >
+            ALL INBOXES
+          </p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <div>
+            <img
+              style="
+                border-radius: 20px;
+                margin-left: 8px;
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+              "
+              src="/channel-profiles/channel-1.jpeg"
+            />
+          </div>
+          <div style="flex: 1; margin-left: 8px">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div style="font-weight: bold">Chewy Promotions</div>
+              <div
+                style="
+                  margin-right: 8px;
+                  color: grey;
+                  font-size: 11px;
+                  font-family: arial;
+                "
+              >
+                4:58 PM
+              </div>
+            </div>
+            <div style="font-weight: bold; font-size: 12px">
+              Biggest sales of the year!
+            </div>
+            <div style="font-size: 11px; color: grey; margin-top: 3px">
+              Hey there! We're writing to tell you about our...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="display: flex; align-items: center; margin-top: 10px">
+          <div>
+            <img
+              style="
+                border-radius: 20px;
+                margin-left: 8px;
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+              "
+              src="/channel-profiles/channel-2.jpeg"
+            />
+          </div>
+          <div style="flex: 1; margin-left: 8px">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div style="font-weight: bold">Best Buy</div>
+              <div
+                style="
+                  margin-right: 8px;
+                  color: grey;
+                  font-size: 11px;
+                  font-family: arial;
+                "
+              >
+                12:32 PM
+              </div>
+            </div>
+            <div style="font-weight: bold; font-size: 12px">
+              Your Best Buy eReceipt
+            </div>
+            <div style="font-size: 11px; color: grey; margin-top: 3px">
+              Thank you for shopping at Best Buy, here is...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="display: flex; align-items: center; margin-top: 10px">
+          <div>
+            <img
+              style="
+                border-radius: 20px;
+                margin-left: 8px;
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+              "
+              src="/channel-profiles/channel-3.jpeg"
+            />
+          </div>
+          <div style="flex: 1; margin-left: 8px">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div style="font-weight: bold">Netflix</div>
+              <div
+                style="
+                  margin-right: 8px;
+                  color: grey;
+                  font-size: 11px;
+                  font-family: arial;
+                "
+              >
+                9:00 AM
+              </div>
+            </div>
+            <div style="font-weight: bold; font-size: 12px">
+              Here's what's coming soon to Netflix
+            </div>
+            <div style="font-size: 11px; color: grey; margin-top: 3px">
+              Brand new movies and shows, old favorites...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="f-container">
+      <div class="f-tweet">
+        <div style="margin-top: 8px; margin-left: 8px">
+          <img
+            style="
+              width: 40px;
+              height: 40px;
+              border-radius: 20px;
+              object-fit: cover;
+            "
+            src="/channel-profiles/channel-3.jpeg"
+          />
+        </div>
+        <div style="margin-top: 8px; margin-left: 8px; flex: 1">
+          <div style="display: flex">
+            <div
+              style="font-weight: bold; margin-bottom: 4px; margin-right: 4px"
+            >
+              supersimple.dev
+            </div>
+            <div style="color: gray">@SuperSimpleDev</div>
+          </div>
+          <div style="line-height: 20px">
+            What is backend web development? A complete overview. New video is
+            up!
+          </div>
+          <div
+            style="
+              border-style: solid;
+              border-width: 1px;
+              border-color: rgb(179, 178, 178);
+              border-radius: 15px;
+              margin-top: 8px;
+              margin-right: 10px;
+              display: flex;
+              overflow: hidden;
+              align-items: center;
+            "
+          >
+            <div
+              style="
+                width: 100px;
+                height: 100px;
+                background-color: rgb(179, 178, 178);
+                margin-right: 10px;
+              "
+            ></div>
+            <div style="padding-top: 10px; padding-bottom: 10px; flex: 1">
+              <div>youtube.com</div>
+              <div>Backend web development - a complete overview (2021)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

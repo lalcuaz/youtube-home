@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercises 12a-f</title>
+    <style>
+      .a-flex {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .b-flex {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .c-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .d-flex {
+        border-style: solid;
+        border-color: grey;
+        border-width: 1px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .e-flex {
+        display: flex;
+        flex-direction: row;
+        border-style: solid;
+        border-width: 1px;
+        border-color: grey;
+        border-radius: 5px;
+        justify-content: space-between;
+        width: 300px;
+        align-items: center;
+      }
+
+      .e-numbers {
+        background-color: cadetblue;
+        border-radius: 5px;
+        padding: 4px 6px 4px 6px;
+        text-align: center;
+        color: white;
+      }
+
+      .g-container {
+        margin-top: 10px;
+        width: 400px;
+        height: 250px;
+      }
+
+      .g-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 6px;
+      }
+
+      .g-img {
+        border-radius: 60px;
+        width: 100%;
+      }
+
+      .g-follow {
+        color: white;
+        background-color: cadetblue;
+        border-radius: 8px;
+        padding: 10px 10px 10px 10px;
+        border: none;
+      }
+
+      .f-flex {
+        background-color: mediumslateblue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .f-searchbar {
+        width: 70%;
+        border-radius: 10px;
+        padding: 5px;
+        border: 0;
+        font-size: 10px;
+      }
+
+      .f-button {
+        border-color: white;
+        color: white;
+        background-color: mediumslateblue;
+        border-width: 1px;
+        padding: 6px 10px 6px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a-flex">
+      <div style="width: 200px; background-color: lightblue">200px</div>
+      <div style="width: 75px; background-color: pink">75px</div>
+    </div>
+
+    <div class="b-flex">
+      <div style="background-color: lightblue; width: 50px">item1</div>
+      <div style="background-color: pink; flex: 1">item2</div>
+      <div style="background-color: lightblue; width: 75px">item3</div>
+    </div>
+
+    <div class="c-flex">
+      <div style="background-color: pink">item1</div>
+      <div style="background-color: pink">item2</div>
+      <div style="background-color: pink">item3</div>
+      <div style="background-color: pink">item4</div>
+    </div>
+
+    <div class="d-flex">
+      <div style="background-color: pink">item1</div>
+      <div style="background-color: pink">item2</div>
+    </div>
+
+    <div class="e-flex">
+      <div style="margin-left: 10px">
+        <p>Home</p>
+        <p>Notifications</p>
+        <p>Messages</p>
+      </div>
+      <div style="margin-right: 10px">
+        <p class="e-numbers">14</p>
+        <p class="e-numbers">3</p>
+        <p class="e-numbers">5</p>
+      </div>
+    </div>
+
+    <div class="g-container">
+      <div class="g-flex">
+        <div style="width: 40px">
+          <img class="g-img" src="/channel-profiles/channel-1.jpeg" />
+        </div>
+        <div style="flex: 1; margin-left: 10px">
+          <p style="margin: 0 0 0 0; font-weight: bold">oliver</p>
+          <p style="margin: 0 0 0 0; color: grey; font-family: arial">
+            the cat
+          </p>
+          <p style="margin: 0 0 0 0; color: grey; font-size: 11px">Popular</p>
+        </div>
+        <div class="width: 40px">
+          <button class="g-follow">Follow</button>
+        </div>
+      </div>
+      <div class="g-flex">
+        <div style="width: 40px">
+          <img class="g-img" src="/channel-profiles/channel-2.jpeg" />
+        </div>
+        <div style="flex: 1; margin-left: 10px">
+          <p style="margin: 0 0 0 0; font-weight: bold">Mimi</p>
+          <p style="margin: 0 0 0 0; color: grey; font-family: arial">
+            Sleepy Cat
+          </p>
+          <p style="margin: 0 0 0 0; color: grey; font-size: 11px">Popular</p>
+        </div>
+        <div class="width: 40px">
+          <button class="g-follow">Follow</button>
+        </div>
+      </div>
+      <div class="g-flex">
+        <div style="width: 40px">
+          <img class="g-img" src="/channel-profiles/channel-3.jpeg" />
+        </div>
+        <div style="flex: 1; margin-left: 10px">
+          <p style="margin: 0 0 0 0; font-weight: bold">Rex</p>
+          <p style="margin: 0 0 0 0; color: grey; font-family: arial">
+            Happy Bulldog
+          </p>
+          <p style="margin: 0 0 0 0; color: grey; font-size: 11px">Popular</p>
+        </div>
+        <div class="width: 40px">
+          <button class="g-follow">Follow</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="f-flex">
+      <div style="width: 70px; margin-left: 10px">
+        <p style="color: white">Home</p>
+      </div>
+      <div style="flex: 1">
+        <input type="text" placeholder="Search" class="f-searchbar" />
+      </div>
+      <div style="width: 100px">
+        <button class="f-button">Download</button>
+      </div>
+    </div>
+  </body>
+</html>

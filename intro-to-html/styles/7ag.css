@@ -1,0 +1,78 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.image-one {
+  width: 200px;
+  object-fit: contain;
+  object-position: center;
+  border-style: solid;
+  border-radius: 400px;
+  border-width: 2px;
+  border-color: red;
+}
+
+.search-bar {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.linkedin-descript {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  color: gray;
+  font-size: 11px;
+
+}
+
+.linkedin-input {
+  width: 400px;
+  border-width: 2px;
+  border-style: solid;
+  padding-top: 7px;
+padding-bottom: 7px;
+}
+
+.linkedin-button {
+  background-color: cadetblue;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 400px;
+}
+
+.twitter-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 90px;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.twitter-input {
+  border: none;
+  font-size: 18px;
+  vertical-align: middle;
+  width: 300px;
+
+}
+
+.twitter-button {
+  vertical-align: middle;
+  background-color:dodgerblue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 18px;
+  border-radius: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

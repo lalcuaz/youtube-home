@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise 10e</title>
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .layout {
+        width: 600px;
+        height: 300px;
+      }
+
+      .profile-column {
+        width: 190px;
+        height: 300px;
+        display: inline-block;
+        vertical-align: top;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+      }
+
+      .picture-layout {
+        display: block;
+        width: 100%;
+        height: 200px;
+      }
+
+      .profile-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile-info-section {
+        width: 100%;
+        height: 90px;
+        margin-top: 10px;
+        display: block;
+      }
+
+      .profile-name-section {
+        display: block;
+      }
+
+      .profile-name {
+        margin-left: 10px;
+        font-weight: 700;
+      }
+
+      .mutual-friends-section {
+        display: block;
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+
+      .mutual-friend-picture-section {
+        display: inline-block;
+        width: 25px;
+      }
+
+      .mutual-friend-picture {
+        width: 25px;
+        height: 25px;
+        border-radius: 14px;
+        vertical-align: middle;
+        object-fit: cover;
+      }
+
+      .mutual-friend-amount-section {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .mutual-friend-amount {
+        font-size: 12px;
+        color: grey;
+      }
+
+      .add-friend-section {
+        display: block;
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+      .add-friend-button {
+        background-color: cadetblue;
+        color: white;
+        border: none;
+        font-size: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="profile-column">
+        <div class="picture-layout">
+          <img class="profile-picture" src="../pictures/powder1.png" alt="" />
+        </div>
+        <div class="profile-info-section">
+          <div class="profile-name-section">
+            <p class="profile-name">Powder</p>
+          </div>
+          <div class="mutual-friends-section">
+            <div class="mutual-friend-picture-section">
+              <img
+                class="mutual-friend-picture"
+                src="/thumbnails/thumbnail-1.webp"
+              />
+            </div>
+            <div class="mutual-friend-amount-section">
+              <p class="mutual-friend-amount">2 mutual friends</p>
+            </div>
+          </div>
+          <div class="add-friend-section">
+            <button class="add-friend-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
